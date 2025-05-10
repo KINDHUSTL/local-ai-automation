@@ -64,8 +64,8 @@ Before you begin, make sure you have the following software installed:
 
 Clone the repository and navigate to the project directory:
 ```bash
-git clone https://github.com/coleam00/local-ai-packaged.git
-cd local-ai-packaged
+git clone https://github.com/KINDHUSTL/local-ai-automation.git
+cd local-ai-automation
 ```
 
 Before running the services, you need to set up your environment variables for Supabase following their [self-hosting guide](https://supabase.com/docs/guides/self-hosting/docker#securing-your-services).
