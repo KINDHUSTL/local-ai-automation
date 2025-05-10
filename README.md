@@ -1,6 +1,6 @@
-# Self-hosted AI Package
+# Local AI Automation
 
-**Self-hosted AI Package** is an open, docker compose template that
+**Local AI Automation** is an open, docker compose template that
 quickly bootstraps a fully featured Local AI and Low Code development
 environment including Ollama for your local LLMs, Open WebUI for an interface to chat with your N8N agents, and Supabase for your database, vector store, and authentication. 
 
