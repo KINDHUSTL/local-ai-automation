@@ -59,6 +59,7 @@ Before you begin, make sure you have the following software installed:
 - [Python](https://www.python.org/downloads/) - Required to run the setup script
 - [Git/GitHub Desktop](https://desktop.github.com/) - For easy repository management
 - [Docker/Docker Desktop](https://www.docker.com/products/docker-desktop/) - Required to run all services
+- Before running the services, you need to set up your environment variables for Supabase following their [self-hosting guide](https://supabase.com/docs/guides/self-hosting/docker#securing-your-services).
 
 ## Installation
 
@@ -67,8 +68,24 @@ Clone the repository and navigate to the project directory:
 git clone https://github.com/KINDHUSTL/local-ai-automation.git
 cd local-ai-automation
 ```
+git clone https://github.com/n8n-io/self-hosted-ai-starter-kit.git
+cd self-hosted-ai-starter-kit
+Running n8n using Docker Compose
+For Nvidia GPU users
+git clone https://github.com/n8n-io/self-hosted-ai-starter-kit.git
+cd self-hosted-ai-starter-kit
+docker compose --profile gpu-nvidia up
+Note
 
-Before running the services, you need to set up your environment variables for Supabase following their [self-hosting guide](https://supabase.com/docs/guides/self-hosting/docker#securing-your-services).
+If you have not used your Nvidia GPU with Docker before, please follow the Ollama Docker instructions.
+
+For AMD GPU users on Linux
+git clone https://github.com/n8n-io/self-hosted-ai-starter-kit.git
+cd self-hosted-ai-starter-kit
+docker compose --profile gpu-amd up
+
+
+
 
 1. Make a copy of `.env.example` and rename it to `.env` in the root directory of the project
 2. Set the following required environment variables:
